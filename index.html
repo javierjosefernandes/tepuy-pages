@@ -2,52 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tepuy — Hatil&uacute; Studio</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #fbfbfd;
-      --fg: #1d1d1f;
-      --fg-body: #424245;
-      --muted: #86868b;
-      --rule: #d2d2d7;
-      --card: #f5f5f7;
-      --accent: #0071e3;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1c1e;
-        --fg: #f5f5f7;
-        --fg-body: #c7c7cc;
-        --muted: #8e8e93;
-        --rule: #38383a;
-        --card: #2c2c2e;
-        --accent: #0a84ff;
-      }
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; color: var(--fg); background: var(--bg); line-height: 1.6; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-    .container { text-align: center; padding: 24px; }
-    h1 { font-size: 2.5rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
-    p { font-size: 1rem; color: var(--muted); margin-bottom: 24px; }
-    .links { display: flex; gap: 24px; justify-content: center; }
-    a { color: var(--accent); text-decoration: none; font-size: 1rem; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hatilú Studio: Independent Apps for iPhone, iPad and Apple Watch</title>
+  <meta name="description" content="Hatilú Studio is Javier Fernandes, an independent Apple developer in the Netherlands. Apps with no ads, no clutter and no account to create. Maker of Tepuy, the free workout tracker.">
+  <link rel="canonical" href="https://hatilu.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hatilú Studio">
+  <meta property="og:title" content="Hatilú Studio">
+  <meta property="og:description" content="Independent apps for iPhone, iPad and Apple Watch. No ads, no clutter, no account to create.">
+  <meta property="og:url" content="https://hatilu.com/">
+  <meta property="og:image" content="https://hatilu.com/assets/og/hatilu.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hatilú Studio. Independent apps for iPhone, iPad and Apple Watch.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
+  <!-- analytics -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hatilú Studio",
+    "alternateName": "Hatilu Studio",
+    "url": "https://hatilu.com/",
+    "email": "hello@hatilu.com",
+    "description": "An independent studio making apps for iPhone, iPad and Apple Watch, with no ads and no account to create.",
+    "founder": { "@type": "Person", "name": "Javier Fernandes" },
+    "address": { "@type": "PostalAddress", "addressCountry": "NL" }
+  }
+  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>Tepuy</h1>
-    <p>by Hatil&uacute; Studio</p>
-    <div class="links">
-      <a href="privacy/en/">Privacy Policy</a>
-      <a href="support/en/">Support</a>
-      <a href="roadmap/en/">Roadmap</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">Hatilú Studio</a>
+      <nav class="site-nav" aria-label="Studio">
+        <a href="#apps">Apps</a>
+        <a href="#about">About</a>
+        <a href="press/">Press</a>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <div class="wrap home-hero">
+      <h1>Hatilú Studio</h1>
+      <p>Independent apps for iPhone, iPad and Apple Watch. No ads, no clutter, and no account to create.</p>
+    </div>
+
+    <div class="wrap">
+      <section class="home-section" id="apps" aria-labelledby="apps-title">
+        <h2 id="apps-title">Apps</h2>
+        <div class="body">
+          <a class="app-card" href="tepuy/">
+            <img src="tepuy/img/icon-512.png" alt="" width="92" height="92">
+            <div>
+              <strong>Tepuy</strong>
+              <span>A free workout tracker for strength training, Hyrox, or whatever you train.</span>
+              <small>iPhone, iPad and Apple Watch</small>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="home-section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <div class="body">
+          <p>Hatilú Studio is Javier Fernandes, an independent Apple developer in the Netherlands. There is nobody else: I design, build and support every app myself.</p>
+          <p>I work in health tech, where protecting people&rsquo;s data is the job, and I hold my own apps to the same standard. They don&rsquo;t ask you for an account, and what you put in them stays yours.</p>
+          <p>I was born and grew up in Venezuela. The name joins El Hatillo, the town where I grew up, with the first letters of my eldest daughter&rsquo;s name, Lucia.</p>
+        </div>
+      </section>
+
+      <section class="home-section" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="body">
+          <p>For help with an app, use its support page: <a href="tepuy/support/en/">Tepuy support</a>.</p>
+          <p>For anything else, write to <a href="mailto:hello@hatilu.com">hello@hatilu.com</a>. If you are writing about the studio or one of its apps, the <a href="press/">press page</a> has the facts and the files.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <a href="tepuy/">Tepuy</a>
+        <a href="press/">Press</a>
+        <a href="mailto:hello@hatilu.com">Contact</a>
+      </nav>
+      <p>&copy; 2026 Hatilú Studio. Made by Javier Fernandes in the Netherlands.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

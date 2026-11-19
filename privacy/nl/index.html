@@ -2,123 +2,14 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tepuy — Privacybeleid</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #fbfbfd;
-      --fg: #1d1d1f;
-      --fg-body: #424245;
-      --muted: #86868b;
-      --rule: #d2d2d7;
-      --card: #f5f5f7;
-      --accent: #0071e3;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1c1e;
-        --fg: #f5f5f7;
-        --fg-body: #c7c7cc;
-        --muted: #8e8e93;
-        --rule: #38383a;
-        --card: #2c2c2e;
-        --accent: #0a84ff;
-      }
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; color: var(--fg); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px 80px; }
-    h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; }
-    .subtitle { font-size: 0.95rem; color: var(--muted); margin-bottom: 40px; }
-    .philosophy { font-size: 1.15rem; font-weight: 500; color: var(--fg); border-left: 3px solid var(--accent); padding-left: 16px; margin-bottom: 40px; }
-    h2 { font-size: 1.25rem; font-weight: 600; margin-top: 36px; margin-bottom: 12px; }
-    p, li { font-size: 0.95rem; color: var(--fg-body); margin-bottom: 10px; }
-    ul { padding-left: 20px; margin-bottom: 16px; }
-    li { margin-bottom: 6px; }
-    strong { color: var(--fg); }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .services { background: var(--card); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
-    .services p { margin-bottom: 6px; }
-    .lang-switcher { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--muted); text-align: center; }
-    .lang-switcher a, .lang-switcher .current { display: inline-block; padding: 2px 8px; min-width: 2.4em; text-align: center; color: var(--muted); }
-    .lang-switcher a:hover { color: var(--accent); }
-    .lang-switcher .current { color: var(--fg); font-weight: 600; }
-    .lang-switcher.top { margin-top: 0; margin-bottom: 32px; padding-top: 0; padding-bottom: 16px; border-top: none; border-bottom: 1px solid var(--rule); }
-    .effective { margin-top: 36px; font-size: 0.85rem; color: var(--muted); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex">
+  <title>Tepuy</title>
+  <link rel="canonical" href="https://hatilu.com/tepuy/privacy/nl/">
+  <meta http-equiv="refresh" content="0;url=../../tepuy/privacy/nl/">
 </head>
 <body>
-  <div class="container">
-    <div class="lang-switcher top">
-      <a href="../en/">EN</a>
-      <a href="../de/">DE</a>
-      <a href="../es/">ES</a>
-      <a href="../fr/">FR</a>
-      <a href="../it/">IT</a>
-      <span class="current">NL</span>
-      <a href="../pt-PT/">PT</a>
-    </div>
-
-    <h1>Tepuy</h1>
-    <p class="subtitle">Privacybeleid &mdash; Hatil&uacute; Studio</p>
-
-    <p class="philosophy">Je gegevens blijven op je apparaat en in je persoonlijke iCloud-account. Wij zien nooit je trainingen of persoonlijke informatie.</p>
-
-    <h2>Gegevens die we verzamelen</h2>
-
-    <p><strong>iCloud-synchronisatie</strong></p>
-    <p>Je trainingen, oefeningen, sjablonen en instellingen worden gesynchroniseerd tussen je apparaten via Apple's iCloud (CloudKit). Deze gegevens worden opgeslagen in je persoonlijke iCloud-account en zijn nooit toegankelijk voor ons.</p>
-
-    <p><strong>Gebruiksanalyse</strong></p>
-    <p>We verzamelen anonieme gebruiksgegevens om te begrijpen welke functies het belangrijkst zijn en de app voor je te verbeteren. Deze gegevens kunnen niet aan je identiteit worden gekoppeld. We gebruiken hiervoor <a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel</a>.</p>
-
-    <p><strong>Crashmeldingen</strong></p>
-    <p>Als de app crasht, wordt er automatisch een rapport verzonden zodat we het probleem kunnen vinden en oplossen. Deze rapporten bevatten geen persoonlijke informatie. We gebruiken hiervoor <a href="https://sentry.io/privacy/">Sentry</a>.</p>
-
-    <p><strong>Feature flags</strong></p>
-    <p>We gebruiken <a href="https://www.flagsmith.com/privacy-policy">Flagsmith</a> om de beschikbaarheid van functies te beheren. Er worden geen persoonlijke gegevens verzameld via deze dienst.</p>
-
-    <h2>Gegevens die we niet verzamelen</h2>
-    <ul>
-      <li>We verzamelen geen naam, e-mailadres of andere persoonlijke identificatoren</li>
-      <li>We verkopen je gegevens niet en delen ze niet met adverteerders</li>
-      <li>We gebruiken geen advertenties van derden</li>
-      <li>We hebben geen toegang tot gezondheids- of fitnessgegevens buiten wat je in de app invoert</li>
-    </ul>
-
-    <h2>Diensten van derden</h2>
-    <div class="services">
-      <p><a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel</a> &mdash; Anonieme gebruiksanalyse</p>
-      <p><a href="https://sentry.io/privacy/">Sentry</a> &mdash; Crashmeldingen</p>
-      <p><a href="https://www.flagsmith.com/privacy-policy">Flagsmith</a> &mdash; Feature flags</p>
-      <p><a href="https://www.apple.com/legal/privacy/">Apple iCloud</a> &mdash; Gegevenssynchronisatie</p>
-    </div>
-
-    <h2>Je rechten</h2>
-    <p>Je kunt al je gegevens op elk moment verwijderen via de optie &ldquo;Alle Gegevens Wissen&rdquo; in Instellingen &rarr; Gegevens. Dit verwijdert je gegevens van zowel het apparaat als iCloud. Je kunt je iCloud-gegevens ook rechtstreeks beheren via de iCloud-instellingen van je apparaat.</p>
-
-    <h2>Contact</h2>
-    <p>Als je vragen hebt over dit privacybeleid, neem contact met ons op via <a href="mailto:tepuy@jfd.slmail.me">tepuy@jfd.slmail.me</a>.</p>
-
-    <h2>Ondersteuning</h2>
-    <p>Hulp nodig met Tepuy? Bezoek onze <a href="../../support/nl/">ondersteuningspagina</a>.</p>
-
-    <p class="effective">Geldig vanaf: april 2026</p>
-
-    <div class="lang-switcher">
-      <a href="../en/">EN</a>
-      <a href="../de/">DE</a>
-      <a href="../es/">ES</a>
-      <a href="../fr/">FR</a>
-      <a href="../it/">IT</a>
-      <span class="current">NL</span>
-      <a href="../pt-PT/">PT</a>
-    </div>
-  </div>
+  <p>This page has moved to <a href="../../tepuy/privacy/nl/">hatilu.com/tepuy/privacy/nl/</a>.</p>
 </body>
 </html>

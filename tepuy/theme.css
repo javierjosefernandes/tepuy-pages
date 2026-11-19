@@ -1,0 +1,21 @@
+/* Tepuy's colours, taken from its icon: green on black. Loaded after
+   assets/site.css by every page in this folder. A new app copies this file
+   and changes the values; nothing else carries an app's colour. */
+
+:root {
+  --accent: #0f7a3b;
+  --accent-strong: #0b6831;
+  --on-accent: #ffffff;
+
+  --band-bg: #06110a;
+  --band-shape: #0d2416;
+  --band-highlight: #3fcf78;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #3fc474;
+    --accent-strong: #5ad68b;
+    --on-accent: #06110a;
+  }
+}
